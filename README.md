@@ -3,18 +3,14 @@
 - I’m graduating in December 2026.
 - Feel free to contact me via LinkedIn.
 
-<div>
-  <a href="https://https://www.linkedin.com/in/lucas-dota-trombini/">
-      <img 
-           src="https://github-readme-stats.vercel.app/api?username=Lucasdota&show_icons=true&theme=tokyonight" 
-           height="100em" 
-      />
-      <img 
-           src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lucasdota&layout=compact&theme=tokyonight" 
-           height="100em" 
-      />
-  </a>  
-</div>
+<a href="https://https://www.linkedin.com/in/lucas-dota-trombini/" style="display: flex; gap: 10px">
+    <img 
+         src="https://github-readme-stats.vercel.app/api?username=Lucasdota&show_icons=true&theme=tokyonight" 
+    />
+    <img 
+         src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lucasdota&layout=compact&theme=tokyonight" 
+    />
+</a>  
 
 <div style="width: 100%; display: flex; justify-content: space-between"><br>
   <img align="center" width="30" height="40" alt="shopify_icon" src="https://github.com/user-attachments/assets/96711167-838d-4bf4-9460-c2453fa6a090" />

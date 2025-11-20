@@ -1,19 +1,17 @@
-## Hi there 👋 how are you?
-
-- 💻 I’m working as a Frontend Developer.
-- 🧬 Mainly coding in Liquid (Shopify), React, and JavaScript.
-- 📚 I’m graduating in December 2026.
-- 📫 Feel free to contact me via LinkedIn.
+- Frontend Developer.
+- Mainly coding in Liquid (Shopify), React, and JavaScript.
+- I’m graduating in December 2026.
+- Feel free to contact me via LinkedIn.
 
 <div>
   <a href="https://https://www.linkedin.com/in/lucas-dota-trombini/">
       <img 
            src="https://github-readme-stats.vercel.app/api?username=Lucasdota&show_icons=true&theme=tokyonight" 
-           height="200em" 
+           height="100em" 
       />
       <img 
            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lucasdota&layout=compact&theme=tokyonight" 
-           height="200em" 
+           height="100em" 
       />
   </a>  
 </div>

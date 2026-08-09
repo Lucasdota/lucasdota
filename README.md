@@ -1,7 +1,6 @@
-- I'm working as a Frontend Developer.
-- Mainly coding in Liquid (Shopify), React, and JavaScript.
-- I’m graduating in December 2026.
-- Feel free to contact me via LinkedIn.
+- I'm a Shopify Developer.
+- Graduating in December 2026.
+- Feel free to contact me in LinkedIn.
 
 
 <p align= "center">

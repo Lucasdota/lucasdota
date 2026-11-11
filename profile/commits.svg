@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="446" viewBox="0 0 860 446" role="img" aria-label="924 commits, 347 pull requests and 3 new stars in the last 12 months">
+<style>
+text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+.grow{transform-box:fill-box;transform-origin:50% 100%;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.growx{transform-box:fill-box;transform-origin:0 50%;animation:growx 1.1s cubic-bezier(.2,.8,.2,1) both}
+.fade{animation:fade .6s ease-out both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.6,.5,1) both}
+.twinkle{animation:tw 2.6s ease-in-out infinite}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes growx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.5}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="859" height="445" rx="12" fill="#161b22" stroke="#30363d"/>
+<text x="32" y="64" font-size="40" font-weight="800" fill="#95BF47">924<tspan fill="#e6edf3" font-weight="700"> commits</tspan></text>
+<text x="32" y="92" font-size="14" fill="#8b949e">across 35 repositories · Dec 2025 – Nov 2026</text>
+<text x="828" y="50" font-size="13" text-anchor="end" fill="#8b949e">public <tspan font-weight="700" fill="#e6edf3">23</tspan></text>
+<rect x="756.1" y="40" width="11" height="11" rx="3" fill="#AEE9D1"/>
+<text x="734.1" y="50" font-size="13" text-anchor="end" fill="#8b949e">private <tspan font-weight="700" fill="#e6edf3">901</tspan></text>
+<rect x="647.9" y="40" width="11" height="11" rx="3" fill="#95BF47"/>
+<text x="828" y="86" font-size="13" text-anchor="end" fill="#8b949e"><tspan font-weight="700" fill="#e6edf3">9</tspan> stars earned</text>
+<polygon points="718.4,74.0 720.3,78.5 725.1,78.8 721.4,82.0 722.5,86.7 718.4,84.2 714.3,86.7 715.4,82.0 711.7,78.8 716.5,78.5" fill="#FFC453"/>
+<text x="694.4" y="86" font-size="13" text-anchor="end" fill="#8b949e"><tspan font-weight="700" fill="#e6edf3">347</tspan> pull requests</text>
+<g fill="none" stroke="#008060" stroke-width="1.8" stroke-linecap="round"><circle cx="565.85" cy="76" r="2.2"/><circle cx="565.85" cy="86" r="2.2"/><line x1="565.85" y1="78.2" x2="565.85" y2="83.8"/><circle cx="574.85" cy="86" r="2.2"/><path d="M574.85 83.8 V79 Q574.85 76 571.85 76 H569.35"/></g>
+<line x1="32" y1="300.5" x2="790" y2="300.5" stroke="#30363d"/>
+<line class="fade" style="animation-delay:1s" x1="32" y1="201.4" x2="796" y2="201.4" stroke="#6e7681" stroke-dasharray="3 5"/>
+<text class="fade" style="animation-delay:1s" x="828" y="197.4" font-size="11" text-anchor="end" fill="#6e7681">avg</text>
+<text class="fade" style="animation-delay:1s" x="828" y="213.4" font-size="12" font-weight="700" text-anchor="end" fill="#8b949e">77/mo</text>
+<g class="grow" style="animation-delay:0.00s">
+<path d="M46.6 300.0 V238.2 Q46.6 232.2 52.6 232.2 H74.6 Q80.6 232.2 80.6 238.2 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.50s" x="63.6" y="224.2" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">53</text>
+<text x="63.6" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Dec</text>
+<text x="63.6" y="340" font-size="11" text-anchor="middle" fill="#6e7681">2025</text>
+<g class="grow" style="animation-delay:0.06s">
+<path d="M109.7 300.0 V181.8 Q109.7 175.8 115.7 175.8 H137.8 Q143.8 175.8 143.8 181.8 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.56s" x="126.7" y="167.8" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">97</text>
+<text x="126.7" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Jan</text>
+<text x="126.7" y="340" font-size="11" text-anchor="middle" fill="#6e7681">2026</text>
+<g class="grow" style="animation-delay:0.12s">
+<path d="M172.9 300.0 V234.3 Q172.9 228.3 178.9 228.3 H200.9 Q206.9 228.3 206.9 234.3 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.62s" x="189.9" y="220.3" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">56</text>
+<text x="189.9" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Feb</text>
+<g class="grow" style="animation-delay:0.18s">
+<path d="M236.1 300.0 V217.7 Q236.1 211.7 242.1 211.7 H264.1 Q270.1 211.7 270.1 217.7 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.68s" x="253.1" y="203.7" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">69</text>
+<text x="253.1" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Mar</text>
+<g class="grow" style="animation-delay:0.24s">
+<path d="M299.2 300.0 V198.5 Q299.2 192.5 305.2 192.5 H327.2 Q333.2 192.5 333.2 198.5 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.74s" x="316.2" y="184.5" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">84</text>
+<text x="316.2" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Apr</text>
+<g class="grow" style="animation-delay:0.30s">
+<path d="M362.4 300.0 V213.8 Q362.4 207.8 368.4 207.8 H390.4 Q396.4 207.8 396.4 213.8 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.80s" x="379.4" y="199.8" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">72</text>
+<text x="379.4" y="324" font-size="12" text-anchor="middle" fill="#8b949e">May</text>
+<g class="grow" style="animation-delay:0.36s">
+<path d="M425.6 300.0 V215.1 Q425.6 209.1 431.6 209.1 H453.6 Q459.6 209.1 459.6 215.1 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.86s" x="442.6" y="201.1" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">71</text>
+<text x="442.6" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Jun</text>
+<g class="grow" style="animation-delay:0.42s">
+<path d="M488.7 300.0 V181.8 Q488.7 175.8 494.7 175.8 H516.8 Q522.8 175.8 522.8 181.8 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:0.92s" x="505.7" y="167.8" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">97</text>
+<text x="505.7" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Jul</text>
+<g class="grow" style="animation-delay:0.48s">
+<path d="M551.9 300.0 V146.0 Q551.9 140.0 557.9 140.0 H579.9 Q585.9 140.0 585.9 146.0 V300.0 Z" fill="#95BF47"/>
+<rect x="551.9166666666666" y="291.0" width="34" height="9.0" fill="#AEE9D1"/>
+</g>
+<text class="fade" style="animation-delay:0.98s" x="568.9" y="132.0" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">125</text>
+<g class="pop" style="animation-delay:1.1s"><rect x="547.9" y="100.0" width="42" height="18" rx="9" fill="#95BF47"/><text x="568.9" y="113.0" font-size="11" font-weight="800" text-anchor="middle" fill="#004C3F">peak</text></g>
+<text x="568.9" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Aug</text>
+<g class="grow" style="animation-delay:0.54s">
+<path d="M615.1 300.0 V203.6 Q615.1 197.6 621.1 197.6 H643.1 Q649.1 197.6 649.1 203.6 V300.0 Z" fill="#95BF47"/>
+</g>
+<text class="fade" style="animation-delay:1.04s" x="632.1" y="189.6" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">80</text>
+<text x="632.1" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Sep</text>
+<g class="grow" style="animation-delay:0.60s">
+<path d="M678.2 300.0 V208.7 Q678.2 202.7 684.2 202.7 H706.2 Q712.2 202.7 712.2 208.7 V300.0 Z" fill="#95BF47"/>
+<rect x="678.25" y="294.9" width="34" height="5.1" fill="#AEE9D1"/>
+</g>
+<text class="fade" style="animation-delay:1.10s" x="695.2" y="194.7" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">76</text>
+<text x="695.2" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Oct</text>
+<g class="grow" style="animation-delay:0.66s">
+<path d="M741.4 300.0 V249.7 Q741.4 243.7 747.4 243.7 H769.4 Q775.4 243.7 775.4 249.7 V300.0 Z" fill="#95BF47"/>
+<rect x="741.4166666666666" y="284.6" width="34" height="15.4" fill="#AEE9D1"/>
+</g>
+<text class="fade" style="animation-delay:1.16s" x="758.4" y="235.7" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">44</text>
+<text x="758.4" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Nov</text>
+<line x1="32" y1="356.5" x2="828" y2="356.5" stroke="#21262d"/>
+<g fill="none" stroke="#008060" stroke-width="1.8" stroke-linecap="round"><circle cx="812" cy="379" r="2.2"/><circle cx="812" cy="389" r="2.2"/><line x1="812" y1="381.2" x2="812" y2="386.8"/><circle cx="821" cy="389" r="2.2"/><path d="M821 386.8 V382 Q821 379 818 379 H815.5"/></g>
+<g class="pop" style="animation-delay:1.00s"><circle cx="63.6" cy="384" r="12" fill="#008060" fill-opacity="0.56" stroke="#008060"/><text x="63.6" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">16</text></g>
+<g class="pop" style="animation-delay:1.05s"><circle cx="126.7" cy="384" r="12" fill="#008060" fill-opacity="0.80" stroke="#008060"/><text x="126.7" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">34</text></g>
+<g class="pop" style="animation-delay:1.10s"><circle cx="189.9" cy="384" r="12" fill="#008060" fill-opacity="0.67" stroke="#008060"/><text x="189.9" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">24</text></g>
+<g class="pop" style="animation-delay:1.15s"><circle cx="253.1" cy="384" r="12" fill="#008060" fill-opacity="0.80" stroke="#008060"/><text x="253.1" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">34</text></g>
+<g class="pop" style="animation-delay:1.20s"><circle cx="316.2" cy="384" r="12" fill="#008060" fill-opacity="0.83" stroke="#008060"/><text x="316.2" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">36</text></g>
+<g class="pop" style="animation-delay:1.25s"><circle cx="379.4" cy="384" r="12" fill="#008060" fill-opacity="0.67" stroke="#008060"/><text x="379.4" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">24</text></g>
+<g class="pop" style="animation-delay:1.30s"><circle cx="442.6" cy="384" r="12" fill="#008060" fill-opacity="0.59" stroke="#008060"/><text x="442.6" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">18</text></g>
+<g class="pop" style="animation-delay:1.35s"><circle cx="505.7" cy="384" r="12" fill="#008060" fill-opacity="0.95" stroke="#008060"/><text x="505.7" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">45</text></g>
+<g class="pop" style="animation-delay:1.40s"><circle cx="568.9" cy="384" r="12" fill="#008060" fill-opacity="1.00" stroke="#008060"/><text x="568.9" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">49</text></g>
+<g class="pop" style="animation-delay:1.45s"><circle cx="632.1" cy="384" r="12" fill="#008060" fill-opacity="0.75" stroke="#008060"/><text x="632.1" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">30</text></g>
+<g class="pop" style="animation-delay:1.50s"><circle cx="695.2" cy="384" r="12" fill="#008060" fill-opacity="0.80" stroke="#008060"/><text x="695.2" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">34</text></g>
+<g class="pop" style="animation-delay:1.55s"><circle cx="758.4" cy="384" r="12" fill="#008060" fill-opacity="0.39" stroke="#008060"/><text x="758.4" y="388" font-size="11" font-weight="700" text-anchor="middle" fill="#e6edf3">3</text></g>
+<polygon points="816.0,411.0 817.9,415.5 822.7,415.8 819.0,419.0 820.1,423.7 816.0,421.1 811.9,423.7 813.0,419.0 809.3,415.8 814.1,415.5" fill="#FFC453"/>
+<g class="pop" style="animation-delay:1.40s"><polygon class="twinkle" style="animation-delay:0.0s" points="56.6,410.0 58.7,415.1 64.2,415.5 60.0,419.1 61.3,424.5 56.6,421.6 51.9,424.5 53.2,419.1 49.0,415.5 54.5,415.1" fill="#FFC453"/><text x="68.6" y="422" font-size="12" font-weight="700" fill="#FFC453">+1</text></g>
+<circle cx="126.7" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="189.9" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="253.1" cy="418" r="2.5" fill="#30363d"/>
+<g class="pop" style="animation-delay:1.60s"><polygon class="twinkle" style="animation-delay:1.2s" points="309.2,410.0 311.4,415.1 316.9,415.5 312.7,419.1 314.0,424.5 309.2,421.6 304.5,424.5 305.8,419.1 301.6,415.5 307.1,415.1" fill="#FFC453"/><text x="321.2" y="422" font-size="12" font-weight="700" fill="#FFC453">+1</text></g>
+<g class="pop" style="animation-delay:1.65s"><polygon class="twinkle" style="animation-delay:1.5s" points="372.4,410.0 374.5,415.1 380.0,415.5 375.8,419.1 377.1,424.5 372.4,421.6 367.7,424.5 369.0,419.1 364.8,415.5 370.3,415.1" fill="#FFC453"/><text x="384.4" y="422" font-size="12" font-weight="700" fill="#FFC453">+1</text></g>
+<circle cx="442.6" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="505.7" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="568.9" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="632.1" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="695.2" cy="418" r="2.5" fill="#30363d"/>
+<circle cx="758.4" cy="418" r="2.5" fill="#30363d"/>
+</svg>

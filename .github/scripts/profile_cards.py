@@ -19,9 +19,6 @@ TOKEN = os.environ.get("GH_TOKEN", "")
 OUT_DIR = os.environ.get("OUT_DIR", "profile")
 DEMO = os.environ.get("DEMO") == "1"
 
-# Tools shown as chips under the languages card. Edit freely.
-DAY_TO_DAY = ["Shopify", "React", "Next.js", "Tailwind CSS"]
-
 # Shopify brand + Polaris palette
 LIME, FOREST, TEAL, MINT, DEEP, GOLD = "#95BF47", "#5E8E3E", "#008060", "#AEE9D1", "#004C3F", "#FFC453"
 CARD, BORDER, GRID = "#161b22", "#30363d", "#21262d"
@@ -369,24 +366,21 @@ def render_languages(d):
         items.append(("Other", rest / total * 100, OTHER_COLOR))
 
     W = 860
-    rows = math.ceil(len(items) / 2)
-    list_y0 = 146
-    chip_y = list_y0 + rows * 38 + 18
-    H = chip_y + 34
+    rows = max(1, math.ceil(len(items) / 2))
+    bar_y, list_y0 = 76, 124
+    H = list_y0 + (rows - 1) * 38 + 40
 
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
          f'role="img" aria-label="Languages weighted by my commits">', STYLE,
          f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="12" fill="{CARD}" stroke="{BORDER}"/>',
          f'<text x="32" y="54" font-size="24" font-weight="800" fill="{TEXT}">Languages</text>',
-         f'<text x="32" y="80" font-size="14" fill="{MUTED}">weighted by my commits · '
-         f'{window_label(d["months"])}</text>',
-         '<defs><clipPath id="bar"><rect x="32" y="102" width="796" height="12" rx="6"/></clipPath></defs>',
-         f'<rect x="32" y="102" width="796" height="12" rx="6" fill="{GRID}"/>',
+         f'<defs><clipPath id="bar"><rect x="32" y="{bar_y}" width="796" height="12" rx="6"/></clipPath></defs>',
+         f'<rect x="32" y="{bar_y}" width="796" height="12" rx="6" fill="{GRID}"/>',
          '<g clip-path="url(#bar)"><g class="growx">']
     x = 32.0
     for name, pct, color in items:
         w = 796 * pct / 100
-        o.append(f'<rect x="{x:.1f}" y="102" width="{w + .6:.1f}" height="12" fill="{color}"/>')
+        o.append(f'<rect x="{x:.1f}" y="{bar_y}" width="{w + .6:.1f}" height="12" fill="{color}"/>')
         x += w
     o.append('</g></g>')
 
@@ -394,59 +388,90 @@ def render_languages(d):
     for k, (name, pct, color) in enumerate(items):
         cx, ry = cols[k % 2], list_y0 + (k // 2) * 38
         delay = f"animation-delay:{0.3 + 0.08 * k:.2f}s"
+        last_row = k // 2 == rows - 1
+        line = '' if last_row else (f'<line x1="{cx}" y1="{ry + 16.5}" x2="{cx + col_w}" '
+                                    f'y2="{ry + 16.5}" stroke="{GRID}"/>')
         o.append(f'<g class="fade" style="{delay}">'
                  f'<circle cx="{cx + 7}" cy="{ry - 5}" r="6" fill="{color}"/>'
                  f'<text x="{cx + 24}" y="{ry}" font-size="15" fill="{TEXT}">{escape(name)}</text>'
                  f'<text x="{cx + col_w}" y="{ry}" font-size="15" font-weight="700" text-anchor="end" '
-                 f'fill="{TEXT}">{pct:.1f}%</text>'
-                 f'<line x1="{cx}" y1="{ry + 16.5}" x2="{cx + col_w}" y2="{ry + 16.5}" stroke="{GRID}"/></g>')
-
-    label = "also in my day-to-day"
-    o.append(f'<text x="32" y="{chip_y + 4}" font-size="13" fill="{MUTED}">{label}</text>')
-    x = 32 + text_w(label, 13) + 18
-    chip_colors = [LIME, MINT, GOLD, TEAL, FOREST]
-    for k, tool in enumerate(DAY_TO_DAY):
-        color = chip_colors[k % len(chip_colors)]
-        w = text_w(tool, 12, True) + 34
-        o.append(f'<g class="pop" style="animation-delay:{0.8 + 0.08 * k:.2f}s">'
-                 f'<rect x="{x:.1f}" y="{chip_y - 13}" width="{w:.1f}" height="26" rx="13" fill="none" '
-                 f'stroke="{color}" stroke-opacity=".55"/>'
-                 f'<circle cx="{x + 13:.1f}" cy="{chip_y}" r="3.5" fill="{color}"/>'
-                 f'<text x="{x + 22:.1f}" y="{chip_y + 4}" font-size="12" font-weight="700" '
-                 f'fill="{color}">{escape(tool)}</text></g>')
-        x += w + 10
+                 f'fill="{TEXT}">{pct:.1f}%</text>{line}</g>')
     o.append("</svg>")
     return "\n".join(o)
 
 
 # ------------------------------------------------------------------ footer
 def render_footer():
+    """A conveyor belt carrying parcels and shopping bags, looping left to right."""
     W, H = 860, 96
-    layers = [  # (base y, amplitude, waves per width, seconds, reverse, top color, bottom color, opacity)
-        (40, 10, 1, 14, False, DEEP, "#0b2f27", 1),
-        (52, 9, 2, 10, True, FOREST, DEEP, .9),
-        (64, 7, 1, 7, False, LIME, TEAL, .85),
+    belt_top, period, secs = 56, W, 26
+    speed = period / secs                      # px per second, shared by belt and rollers
+
+    def box(x, w, h, tone):
+        y = belt_top - h
+        body, flap, tape = tone
+        return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2.5" fill="{body}"/>'
+                f'<rect x="{x}" y="{y}" width="{w}" height="{max(4, h // 4)}" rx="2.5" fill="{flap}"/>'
+                f'<rect x="{x + w / 2 - 2.5:.1f}" y="{y}" width="5" height="{h}" fill="{tape}" fill-opacity=".85"/>'
+                f'<rect x="{x + 4}" y="{y + h - 9}" width="{min(12, w // 3)}" height="5" rx="1" fill="#f3efe6"/>')
+
+    def bag(x, w, h, color, handle):
+        y = belt_top - h
+        return (f'<path d="M{x + w * .3:.1f} {y + 2} C{x + w * .3:.1f} {y - 9} {x + w * .7:.1f} {y - 9} '
+                f'{x + w * .7:.1f} {y + 2}" fill="none" stroke="{handle}" stroke-width="2.4" stroke-linecap="round"/>'
+                f'<path d="M{x + 2} {y} H{x + w - 2} L{x + w} {belt_top} H{x} Z" fill="{color}"/>'
+                f'<rect x="{x + 2}" y="{y}" width="{w - 4}" height="3" fill="#ffffff" fill-opacity=".18"/>')
+
+    cardboard = ("#c79a63", "#a97c48", "#ead6ad")
+    pale = ("#d9b88a", "#bb9667", "#f3e5c6")
+    items = [
+        lambda x: box(x, 34, 26, cardboard),
+        lambda x: bag(x, 26, 28, LIME, "#d8ecb8"),
+        lambda x: box(x, 24, 18, pale),
+        lambda x: bag(x, 24, 24, TEAL, MINT),
+        lambda x: box(x, 42, 32, cardboard),
+        lambda x: bag(x, 28, 30, GOLD, "#ffe3a3"),
+        lambda x: box(x, 28, 22, pale),
     ]
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-         'role="img" aria-label="">',
-         "<style>.wave{animation:slide linear infinite}.rev{animation-direction:reverse}"
-         f"@keyframes slide{{from{{transform:translateX(0)}}to{{transform:translateX(-{W}px)}}}}"
-         "@media (prefers-reduced-motion:reduce){.wave{animation:none}}</style><defs>"]
-    for k, (_, _, _, _, _, c1, c2, _) in enumerate(layers):
-        o.append(f'<linearGradient id="w{k}" x1="0" y1="0" x2="0" y2="1">'
-                 f'<stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient>')
-    o.append(f'<clipPath id="round"><rect width="{W}" height="{H}" rx="12"/></clipPath></defs>')
-    o.append('<g clip-path="url(#round)">')
-    for k, (base, amp, waves, secs, rev, _, _, op) in enumerate(layers):
-        pts = []
-        for xx in range(0, 2 * W + 1, 10):
-            yy = base + amp * math.sin(2 * math.pi * waves * xx / W + k)
-            pts.append(f"{xx} {yy:.1f}")
-        d_attr = "M" + " L".join(pts) + f" V{H} H0 Z"
-        cls = "wave rev" if rev else "wave"
-        o.append(f'<path class="{cls}" style="animation-duration:{secs}s" d="{d_attr}" '
-                 f'fill="url(#w{k})" fill-opacity="{op}"/>')
-    o.append("</g></svg>")
+    spacing = period / len(items)
+
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="">',
+         "<style>"
+         f".ride{{animation:ride {secs}s linear infinite}}"
+         f"@keyframes ride{{from{{transform:translateX(-{period}px)}}to{{transform:translateX(0)}}}}"
+         f".track{{animation:track {16 / speed:.3f}s linear infinite}}"
+         "@keyframes track{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}"
+         ".spin{transform-box:fill-box;transform-origin:center;animation:spin linear infinite}"
+         "@keyframes spin{to{transform:rotate(360deg)}}"
+         "@media (prefers-reduced-motion:reduce){.ride,.track,.spin{animation:none}}"
+         "</style>",
+         f'<defs><clipPath id="lane"><rect x="30" y="0" width="{W - 60}" height="{belt_top + 1}"/></clipPath></defs>']
+
+    # legs and floor
+    for lx in (110, W - 110):
+        o.append(f'<rect x="{lx - 3}" y="{belt_top + 16}" width="6" height="{H - belt_top - 22}" fill="{GRID}"/>')
+    o.append(f'<rect x="60" y="{H - 6}" width="{W - 120}" height="2" rx="1" fill="{GRID}"/>')
+
+    # belt body, moving surface and rollers
+    o.append(f'<rect x="20" y="{belt_top}" width="{W - 40}" height="18" rx="9" fill="{GRID}" stroke="{BORDER}"/>')
+    o.append(f'<line class="track" x1="30" y1="{belt_top + 2}" x2="{W - 30}" y2="{belt_top + 2}" '
+             f'stroke="{LIME}" stroke-opacity=".7" stroke-width="2" stroke-dasharray="6 10"/>')
+    for k, rx_ in enumerate(range(30, W - 20, 50)):
+        r = 5
+        spin = 2 * math.pi * r / speed
+        o.append(f'<circle cx="{rx_}" cy="{belt_top + 10}" r="{r}" fill="{CARD}" stroke="{BORDER}"/>')
+        o.append(f'<g class="spin" style="animation-duration:{spin:.2f}s">'
+                 f'<line x1="{rx_ - r + 1.5}" y1="{belt_top + 10}" x2="{rx_ + r - 1.5}" y2="{belt_top + 10}" '
+                 f'stroke="{FAINT}" stroke-width="1.5"/>'
+                 f'<line x1="{rx_}" y1="{belt_top + 10 - r + 1.5}" x2="{rx_}" y2="{belt_top + 10 + r - 1.5}" '
+                 f'stroke="{FAINT}" stroke-width="1.5"/></g>')
+
+    # cargo: two identical copies of one period, sliding right forever
+    o.append('<g clip-path="url(#lane)"><g class="ride">')
+    for copy in range(2):
+        for k, make in enumerate(items):
+            o.append(make(round(copy * period + k * spacing + 20)))
+    o.append("</g></g></svg>")
     return "\n".join(o)
 
 

@@ -1,4 +1,4 @@
-<img align="right" width="200" alt="Lucas avatar" src="YOUR_AVATAR_URL" />
+<img width="384" height="384" alt="lucas-coding" src="https://github.com/user-attachments/assets/dacea5b5-133e-4048-9c15-741ef9dc3632" />
 
 # Hi, I'm Lucas 👋
 
@@ -18,9 +18,11 @@
 
 ## About Me 🙂
 
-- 🛍️ **Shopify Developer** custom themes and apps, storefront UI and SEO
+- 🛍️ Shopify Developer building and migrating stores
+- 🎨 Front end: custom themes and storefront UI
+- ⚙️ Back end: Custom and third-party apps setup
 - 🎓 Graduating in **December 2026**
-- 🤝 Open to collaborating on Shopify stores, apps and integrations
+- 🤝 Open to collaborating on Shopify stores and apps
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/lucas-dota-trombini/)
 
 <br clear="right" />

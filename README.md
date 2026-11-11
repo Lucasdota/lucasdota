@@ -1,8 +1,6 @@
 <img width="384" height="384" alt="lucas-coding" src="https://github.com/user-attachments/assets/dacea5b5-133e-4048-9c15-741ef9dc3632" />
 
-# Hi, I'm Lucas 👋
-
-## Connect with me 🤝
+## Hi, I'm Lucas, connect with me 🤝
 
 <p align="left">
   <a href="https://www.linkedin.com/in/lucas-dota-trombini/">
@@ -41,13 +39,15 @@
 <p align="center">
   <img height="180" alt="GitHub Streak"
     src="https://streak-stats.demolab.com/?user=Lucasdota&background=0d1117&border=30363d&stroke=30363d&ring=95BF47&fire=95BF47&currStreakNum=95BF47&currStreakLabel=95BF47&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e" />
-  <img height="180" alt="GitHub Stats"
-    src="https://github-readme-stats.vercel.app/api?username=Lucasdota&show_icons=true&bg_color=0d1117&title_color=95BF47&icon_color=95BF47&ring_color=95BF47&text_color=c9d1d9&border_color=30363d" />
+  <img height="180" alt="GitHub Stats" src="./profile/stats.svg" />
 </p>
 
 <p align="center">
-  <img height="180" alt="Most Used Languages"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lucasdota&layout=compact&langs_count=8&bg_color=0d1117&title_color=95BF47&text_color=c9d1d9&border_color=30363d" />
+  <img height="180" alt="Most Used Languages" src="./profile/top-langs.svg" />
+</p>
+
+<p align="center">
+  <img width="100%" alt="Contribution Graph" src="./profile/activity-graph.svg" />
 </p>
 
 <p align="center">

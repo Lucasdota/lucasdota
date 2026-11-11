@@ -14,7 +14,9 @@
   </a>
 </p>
 
-## About Me 🙂
+<br clear="right" />
+
+## About Me
 
 - 🛍️ Shopify Developer building and migrating stores
 - 🎨 Front end: custom themes and storefront UI
@@ -25,21 +27,6 @@
 
 <br clear="right" />
 
-## Stats 📊
+## Stats
 
-<p align="center">
-  <img height="180" alt="GitHub Streak"
-    src="https://streak-stats.demolab.com/?user=Lucasdota&background=0d1117&border=30363d&stroke=30363d&ring=95BF47&fire=95BF47&currStreakNum=95BF47&currStreakLabel=95BF47&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e" />
-  <img height="180" alt="GitHub Stats" src="./profile/stats.svg" />
-</p>
-
-<p align="center">
-  <img height="180" alt="Most Used Languages" src="./profile/top-langs.svg" />
-</p>
-
-<p align="center">
-  <img hspace="8" width="40" height="40" alt="Shopify" src="https://github.com/user-attachments/assets/96711167-838d-4bf4-9460-c2453fa6a090" />
-  <img hspace="8" width="40" height="40" alt="React" src="https://github.com/user-attachments/assets/2f9aa3bb-cfda-4d53-b05e-516affb5701b" />
-  <img hspace="8" width="40" height="40" alt="TypeScript" src="https://github.com/user-attachments/assets/41b0c3d9-64a0-4da2-ad7a-0ccfe70aed9c" />
-  <img hspace="8" width="40" height="40" alt="JavaScript" src="https://github.com/user-attachments/assets/0380b674-838b-43ea-82d1-51b22bf96ee9" />
-</p>
+<img width="100%" alt="Commits, pull requests and stars over the last 12 months" src="./profile/commits.svg" /> <img width="100%" alt="Languages weighted by my commits" src="./profile/languages.svg" /> <p align="center"> <img hspace="8" width="40" height="40" alt="Shopify" src="https://github.com/user-attachments/assets/96711167-838d-4bf4-9460-c2453fa6a090" /> <img hspace="8" width="40" height="40" alt="React" src="https://github.com/user-attachments/assets/2f9aa3bb-cfda-4d53-b05e-516affb5701b" /> <img hspace="8" width="40" height="40" alt="TypeScript" src="https://github.com/user-attachments/assets/41b0c3d9-64a0-4da2-ad7a-0ccfe70aed9c" /> <img hspace="8" width="40" height="40" alt="JavaScript" src="https://github.com/user-attachments/assets/0380b674-838b-43ea-82d1-51b22bf96ee9" /> </p> <img width="100%" alt="" src="./profile/footer.svg" />

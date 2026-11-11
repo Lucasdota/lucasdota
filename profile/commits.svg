@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="446" viewBox="0 0 860 446" role="img" aria-label="924 commits, 347 pull requests and 3 new stars in the last 12 months">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="446" viewBox="0 0 860 446" role="img" aria-label="926 commits, 347 pull requests and 3 new stars in the last 12 months">
 <style>
 text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
 .grow{transform-box:fill-box;transform-origin:50% 100%;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
@@ -14,9 +14,9 @@ text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <rect x=".5" y=".5" width="859" height="445" rx="12" fill="#161b22" stroke="#30363d"/>
-<text x="32" y="64" font-size="40" font-weight="800" fill="#95BF47">924<tspan fill="#e6edf3" font-weight="700"> commits</tspan></text>
+<text x="32" y="64" font-size="40" font-weight="800" fill="#95BF47">926<tspan fill="#e6edf3" font-weight="700"> commits</tspan></text>
 <text x="32" y="92" font-size="14" fill="#8b949e">across 35 repositories · Dec 2025 – Nov 2026</text>
-<text x="828" y="50" font-size="13" text-anchor="end" fill="#8b949e">public <tspan font-weight="700" fill="#e6edf3">23</tspan></text>
+<text x="828" y="50" font-size="13" text-anchor="end" fill="#8b949e">public <tspan font-weight="700" fill="#e6edf3">25</tspan></text>
 <rect x="756.1" y="40" width="11" height="11" rx="3" fill="#AEE9D1"/>
 <text x="734.1" y="50" font-size="13" text-anchor="end" fill="#8b949e">private <tspan font-weight="700" fill="#e6edf3">901</tspan></text>
 <rect x="647.9" y="40" width="11" height="11" rx="3" fill="#95BF47"/>
@@ -25,9 +25,9 @@ text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 <text x="694.4" y="86" font-size="13" text-anchor="end" fill="#8b949e"><tspan font-weight="700" fill="#e6edf3">347</tspan> pull requests</text>
 <g fill="none" stroke="#008060" stroke-width="1.8" stroke-linecap="round"><circle cx="565.85" cy="76" r="2.2"/><circle cx="565.85" cy="86" r="2.2"/><line x1="565.85" y1="78.2" x2="565.85" y2="83.8"/><circle cx="574.85" cy="86" r="2.2"/><path d="M574.85 83.8 V79 Q574.85 76 571.85 76 H569.35"/></g>
 <line x1="32" y1="300.5" x2="790" y2="300.5" stroke="#30363d"/>
-<line class="fade" style="animation-delay:1s" x1="32" y1="201.4" x2="796" y2="201.4" stroke="#6e7681" stroke-dasharray="3 5"/>
-<text class="fade" style="animation-delay:1s" x="828" y="197.4" font-size="11" text-anchor="end" fill="#6e7681">avg</text>
-<text class="fade" style="animation-delay:1s" x="828" y="213.4" font-size="12" font-weight="700" text-anchor="end" fill="#8b949e">77/mo</text>
+<line class="fade" style="animation-delay:1s" x1="32" y1="201.2" x2="796" y2="201.2" stroke="#6e7681" stroke-dasharray="3 5"/>
+<text class="fade" style="animation-delay:1s" x="828" y="197.2" font-size="11" text-anchor="end" fill="#6e7681">avg</text>
+<text class="fade" style="animation-delay:1s" x="828" y="213.2" font-size="12" font-weight="700" text-anchor="end" fill="#8b949e">77/mo</text>
 <g class="grow" style="animation-delay:0.00s">
 <path d="M46.6 300.0 V238.2 Q46.6 232.2 52.6 232.2 H74.6 Q80.6 232.2 80.6 238.2 V300.0 Z" fill="#95BF47"/>
 </g>
@@ -89,10 +89,10 @@ text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 <text class="fade" style="animation-delay:1.10s" x="695.2" y="194.7" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">76</text>
 <text x="695.2" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Oct</text>
 <g class="grow" style="animation-delay:0.66s">
-<path d="M741.4 300.0 V249.7 Q741.4 243.7 747.4 243.7 H769.4 Q775.4 243.7 775.4 249.7 V300.0 Z" fill="#95BF47"/>
-<rect x="741.4166666666666" y="284.6" width="34" height="15.4" fill="#AEE9D1"/>
+<path d="M741.4 300.0 V247.1 Q741.4 241.1 747.4 241.1 H769.4 Q775.4 241.1 775.4 247.1 V300.0 Z" fill="#95BF47"/>
+<rect x="741.4166666666666" y="282.1" width="34" height="17.9" fill="#AEE9D1"/>
 </g>
-<text class="fade" style="animation-delay:1.16s" x="758.4" y="235.7" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">44</text>
+<text class="fade" style="animation-delay:1.16s" x="758.4" y="233.1" font-size="13" font-weight="700" text-anchor="middle" fill="#e6edf3">46</text>
 <text x="758.4" y="324" font-size="12" text-anchor="middle" fill="#8b949e">Nov</text>
 <line x1="32" y1="356.5" x2="828" y2="356.5" stroke="#21262d"/>
 <g fill="none" stroke="#008060" stroke-width="1.8" stroke-linecap="round"><circle cx="812" cy="379" r="2.2"/><circle cx="812" cy="389" r="2.2"/><line x1="812" y1="381.2" x2="812" y2="386.8"/><circle cx="821" cy="389" r="2.2"/><path d="M821 386.8 V382 Q821 379 818 379 H815.5"/></g>

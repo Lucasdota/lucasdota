@@ -25,15 +25,6 @@
 
 <br clear="right" />
 
-## Tech Stack 🧰
-
-<p align="left">
-  <img hspace="8" width="40" height="40" alt="Shopify" src="https://github.com/user-attachments/assets/96711167-838d-4bf4-9460-c2453fa6a090" />
-  <img hspace="8" width="40" height="40" alt="React" src="https://github.com/user-attachments/assets/2f9aa3bb-cfda-4d53-b05e-516affb5701b" />
-  <img hspace="8" width="40" height="40" alt="TypeScript" src="https://github.com/user-attachments/assets/41b0c3d9-64a0-4da2-ad7a-0ccfe70aed9c" />
-  <img hspace="8" width="40" height="40" alt="JavaScript" src="https://github.com/user-attachments/assets/0380b674-838b-43ea-82d1-51b22bf96ee9" />
-</p>
-
 ## Stats 📊
 
 <p align="center">
@@ -50,7 +41,9 @@
   <img width="100%" alt="Contribution Graph" src="./profile/activity-graph.svg" />
 </p>
 
-<p align="center">
-  <img width="100%" alt="Contribution Graph"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Lucasdota&bg_color=0d1117&color=c9d1d9&title_color=95BF47&line=95BF47&point=ffffff&area=true&area_color=95BF47&hide_border=true" />
+<p align="left">
+  <img hspace="8" width="40" height="40" alt="Shopify" src="https://github.com/user-attachments/assets/96711167-838d-4bf4-9460-c2453fa6a090" />
+  <img hspace="8" width="40" height="40" alt="React" src="https://github.com/user-attachments/assets/2f9aa3bb-cfda-4d53-b05e-516affb5701b" />
+  <img hspace="8" width="40" height="40" alt="TypeScript" src="https://github.com/user-attachments/assets/41b0c3d9-64a0-4da2-ad7a-0ccfe70aed9c" />
+  <img hspace="8" width="40" height="40" alt="JavaScript" src="https://github.com/user-attachments/assets/0380b674-838b-43ea-82d1-51b22bf96ee9" />
 </p>

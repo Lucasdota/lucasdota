@@ -21,7 +21,6 @@
 - ⚙️ Back end: Custom and third-party apps setup
 - 🎓 Graduating in **December 2026**
 - 🤝 Open to collaborating on Shopify stores and apps
-- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/lucas-dota-trombini/)
 
 ## Stats 📊
 

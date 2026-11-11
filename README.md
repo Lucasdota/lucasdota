@@ -1,4 +1,4 @@
-<img width="384" height="384" alt="lucas-coding" src="https://github.com/user-attachments/assets/dacea5b5-133e-4048-9c15-741ef9dc3632" />
+<img width="1280" height="400" alt="lucas-banner" src="https://github.com/user-attachments/assets/22077d5e-68ae-41d3-9810-1537bfc8daa2" />
 
 ## Hi, I'm Lucas, connect with me 🤝
 

@@ -18,17 +18,17 @@ text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 <defs><clipPath id="bar"><rect x="32" y="76" width="796" height="12" rx="6"/></clipPath></defs>
 <rect x="32" y="76" width="796" height="12" rx="6" fill="#21262d"/>
 <g clip-path="url(#bar)"><g class="growx">
-<rect x="32.0" y="76" width="430.2" height="12" fill="#95BF47"/>
-<rect x="461.6" y="76" width="150.5" height="12" fill="#008060"/>
-<rect x="611.4" y="76" width="137.2" height="12" fill="#AEE9D1"/>
-<rect x="748.0" y="76" width="52.9" height="12" fill="#5E8E3E"/>
-<rect x="800.3" y="76" width="27.3" height="12" fill="#FFC453"/>
+<rect x="32.0" y="76" width="430.1" height="12" fill="#95BF47"/>
+<rect x="461.5" y="76" width="150.8" height="12" fill="#008060"/>
+<rect x="611.7" y="76" width="137.3" height="12" fill="#AEE9D1"/>
+<rect x="748.4" y="76" width="53.1" height="12" fill="#5E8E3E"/>
+<rect x="800.9" y="76" width="26.7" height="12" fill="#FFC453"/>
 <rect x="827.0" y="76" width="1.6" height="12" fill="#4b5563"/>
 </g></g>
 <g class="fade" style="animation-delay:0.30s"><circle cx="39" cy="119" r="6" fill="#95BF47"/><text x="56" y="124" font-size="15" fill="#e6edf3">Liquid</text><text x="414" y="124" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">54.0%</text><line x1="32" y1="140.5" x2="414" y2="140.5" stroke="#21262d"/></g>
-<g class="fade" style="animation-delay:0.38s"><circle cx="453" cy="119" r="6" fill="#008060"/><text x="470" y="124" font-size="15" fill="#e6edf3">CSS</text><text x="828" y="124" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">18.8%</text><line x1="446" y1="140.5" x2="828" y2="140.5" stroke="#21262d"/></g>
+<g class="fade" style="animation-delay:0.38s"><circle cx="453" cy="119" r="6" fill="#008060"/><text x="470" y="124" font-size="15" fill="#e6edf3">CSS</text><text x="828" y="124" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">18.9%</text><line x1="446" y1="140.5" x2="828" y2="140.5" stroke="#21262d"/></g>
 <g class="fade" style="animation-delay:0.46s"><circle cx="39" cy="157" r="6" fill="#AEE9D1"/><text x="56" y="162" font-size="15" fill="#e6edf3">JavaScript</text><text x="414" y="162" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">17.2%</text><line x1="32" y1="178.5" x2="414" y2="178.5" stroke="#21262d"/></g>
 <g class="fade" style="animation-delay:0.54s"><circle cx="453" cy="157" r="6" fill="#5E8E3E"/><text x="470" y="162" font-size="15" fill="#e6edf3">TypeScript</text><text x="828" y="162" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">6.6%</text><line x1="446" y1="178.5" x2="828" y2="178.5" stroke="#21262d"/></g>
-<g class="fade" style="animation-delay:0.62s"><circle cx="39" cy="195" r="6" fill="#FFC453"/><text x="56" y="200" font-size="15" fill="#e6edf3">SCSS</text><text x="414" y="200" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">3.4%</text></g>
+<g class="fade" style="animation-delay:0.62s"><circle cx="39" cy="195" r="6" fill="#FFC453"/><text x="56" y="200" font-size="15" fill="#e6edf3">SCSS</text><text x="414" y="200" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">3.3%</text></g>
 <g class="fade" style="animation-delay:0.70s"><circle cx="453" cy="195" r="6" fill="#4b5563"/><text x="470" y="200" font-size="15" fill="#e6edf3">Other</text><text x="828" y="200" font-size="15" font-weight="700" text-anchor="end" fill="#e6edf3">0.1%</text></g>
 </svg>
